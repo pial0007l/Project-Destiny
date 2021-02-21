@@ -72,7 +72,6 @@ class _StoryPageState extends State<StoryPage> {
 
                 //TODO: Step 28 - Set the "visible" property of the Visibility Widget to equal the output from the buttonShouldBeVisible() method in the storyBrain.
                 child: Visibility(
-                  visible: storyBrain.buttonShouldBeVisible(),
                   child: FlatButton(
                     onPressed: () {
                       //Choice 2 made by user.

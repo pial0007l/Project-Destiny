@@ -48,7 +48,6 @@ class StoryBrain {
   }
 
   void restart() {
-    _buttonVisibility = true;
     _storyNumber = 0;
   }
 

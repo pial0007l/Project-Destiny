@@ -48,7 +48,6 @@ class StoryBrain {
   }
 
   void restart() {
-    _buttonVisibility = true;
     _storyNumber = 0;
   }
 
@@ -67,18 +66,16 @@ class StoryBrain {
       if (choiceNumber == 1) {
         _storyNumber = 2;
       } else if (choiceNumber == 2) {
-        _buttonVisibility = false;
         _storyNumber = 3;
       }
     } else if (_storyNumber == 2) {
       if (choiceNumber == 1) {
-        _buttonVisibility = false;
         _storyNumber = 5;
       } else if (choiceNumber == 2) {
-        _buttonVisibility = false;
         _storyNumber = 4;
       }
     } else if (_storyNumber == 3 || _storyNumber == 4 || _storyNumber == 5) {
+      _buttonVisibility = false;
       this.restart();
     }
   }
